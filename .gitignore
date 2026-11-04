@@ -1,4 +1,6 @@
-rm '__pycache__/storage.cpython-312.pyc'
+__pycache__/
 *.pyc
 *.log
 tasks.json
+*.env
+*.venv
