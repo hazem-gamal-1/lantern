@@ -1,3 +1,4 @@
+# Lantern usage
 Lantern is a tiny command-line task tracker.
 
 ## Commands
