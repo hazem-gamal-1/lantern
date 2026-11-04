@@ -19,7 +19,10 @@ def main():
         task = add_task(args.title)
         print("added:", task["title"])
     elif args.command == "list":
-        for task in list_tasks():
+        tasks = list_tasks()
+        if not tasks:
+            print("No tasks yet.")
+        for task in tasks:
             print(task["title"])
     else:
         parser.print_help()
