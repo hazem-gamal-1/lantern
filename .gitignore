@@ -1,0 +1,4 @@
+rm '__pycache__/storage.cpython-312.pyc'
+*.pyc
+*.log
+tasks.json
