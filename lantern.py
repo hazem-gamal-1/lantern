@@ -11,6 +11,7 @@ def main():
     add_parser.add_argument("title")
 
     list_parser = sub.add_parser("list")
+    list_parser.add_argument("--done", action="store_true")
 
     args = parser.parse_args()
 
