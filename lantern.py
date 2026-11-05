@@ -10,7 +10,7 @@ def main():
     add_parser = sub.add_parser("add")
     add_parser.add_argument("title")
     export_parser = sub.add_parser("export")
-    
+
     export_parser.add_argument("--csv", action="store_true")
     list_parser = sub.add_parser("list")
     list_parser.add_argument("--sort", action="store_true", help="sort by title")
@@ -26,5 +26,8 @@ def main():
             print("No tasks yet.")
         for task in tasks:
             print(task["title"])
+    elif args.command == "export":
+        export_csv()
+
     else:
         parser.print_help()
