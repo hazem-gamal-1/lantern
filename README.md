@@ -8,3 +8,6 @@ Version Control: Final Project
 | ----------- | ------------- |
 | Hazem Gamal | hazem-gamal-1 |
 | Abdelrahman Rady | abdoradi |
+
+
+[CONTRIBUTING](https://github.com/abdoradi/lantern/tree/main/docs/CONTRIBUTING.md)
