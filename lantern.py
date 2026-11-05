@@ -1,7 +1,7 @@
 import argparse
 
 from tasks import add_task, list_tasks
-
+from export import export_csv
 
 def main():
     parser = argparse.ArgumentParser(prog="lantern")
@@ -9,11 +9,12 @@ def main():
 
     add_parser = sub.add_parser("add")
     add_parser.add_argument("title")
-
+    export_parser = sub.add_parser("export")
+    
+    export_parser.add_argument("--csv", action="store_true")
     list_parser = sub.add_parser("list")
     list_parser.add_argument("--sort", action="store_true", help="sort by title")
     list_parser.add_argument("--done", action="store_true")
-
     args = parser.parse_args()
 
     if args.command == "add":
